@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/listOfCountriesFragment">
+
+    <fragment
+        android:id="@+id/listOfCountriesFragment"
+        android:name="com.albe.worldcountries.ui.listofcountries.ListOfCountriesFragment"
+        android:label="list_of_countries_fragment"
+        tools:layout="@layout/list_of_countries_fragment">
+
+        <action
+            android:id="@+id/action_show_country_detail"
+            app:destination="@+id/countryDetailFragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/countryDetailFragment"
+        android:name="com.albe.worldcountries.ui.countrydetails.CountryDetailFragment"
+        android:label="country_detail"
+        tools:layout="@layout/country_detail_fragment">
+
+        <argument
+            android:name="selectedCountry"
+            app:argType="com.albe.worldcountries.repository.Country" />
+
+    </fragment>
+
+</navigation>

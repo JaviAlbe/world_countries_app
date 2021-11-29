@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/show_all_countries_menu"
+        android:title="All Regions" />
+
+    <item
+        android:id="@+id/show_africa_countries_menu"
+        android:title="Africa" />
+
+    <item
+        android:id="@+id/show_americas_countries_menu"
+        android:title="Americas" />
+
+    <item
+        android:id="@+id/show_asias_countries_menu"
+        android:title="Asia" />
+
+    <item
+        android:id="@+id/show_europe_countries_menu"
+        android:title="Europe" />
+
+    <item
+        android:id="@+id/show_oceania_countries_menu"
+        android:title="Oceania" />
+</menu>
